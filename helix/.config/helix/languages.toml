@@ -1,0 +1,18 @@
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[[language]]
+name = "c"
+language-servers = [ "clangd", "scls" ]
+
+[[language]]
+name = "python"
+language-servers = [ "pylsp", "scls" ]
+
+[[language]]
+name = "rust"
+language-servers = [ "rust-analyzer", "scls" ]
+
+[[language]]
+name = "go"
+language-servers = [ "gopls", "scls" ]

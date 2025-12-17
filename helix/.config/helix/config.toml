@@ -1,0 +1,62 @@
+theme = "ayu_mirage"
+
+[editor]
+cursorline = true
+color-modes = true
+bufferline = "multiple"
+true-color = true
+end-of-line-diagnostics = "hint"
+rulers = [80, 100, 120]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = true
+parents = false
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+tab = "—"
+tabpad = "—"
+
+[editor.indent-guides]
+render = true
+character = "┊"
+skip-levels = 1
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.inline-diagnostics]
+cursor-line = "info"
+
+[keys.normal]
+Y = ":clipboard-yank"
+X = ["extend_line_up", "extend_to_line_bounds"]
+0 = "goto_line_start"
+"$" = "goto_line_end"
+tab = "goto_next_buffer"
+S-tab = "goto_previous_buffer"
+
+[keys.normal." "]
+t = ":sh helix-wezterm.sh terminal"
+
+[keys.normal.";"]
+b = ":sh helix-wezterm.sh blame"
+c = ":sh helix-wezterm.sh check"
+e = ":sh helix-wezterm.sh explorer"
+f = ":sh helix-wezterm.sh fzf"
+g = ":sh helix-wezterm.sh lazygit"
+o = ":sh helix-wezterm.sh open"
+r = ":sh helix-wezterm.sh run"
+s = ":sh helix-wezterm.sh text_single"
+t = ":sh helix-wezterm.sh text_all"
